@@ -18,6 +18,9 @@
   "entrypoints": {
     "main": [
       "net.awakaxis.magic.Magic"
+    ],
+    "client": [
+      "net.awakaxis.magic.MagicClient"
     ]
   },
   "mixins": [
