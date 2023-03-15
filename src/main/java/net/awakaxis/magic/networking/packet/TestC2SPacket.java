@@ -10,6 +10,6 @@ import net.minecraft.server.network.ServerPlayerEntity;
 public class TestC2SPacket {
     public static void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler,
                                PacketByteBuf buf, PacketSender responseSender) {
-        Utilities.Test(player, server.getWorld(player.world.getRegistryKey()));
+        Utilities.Test(player, player.getWorld());
     }
 }

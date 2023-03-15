@@ -1,6 +1,7 @@
 package net.awakaxis.magic;
 
 import net.awakaxis.magic.networking.ModNetworking;
+import net.awakaxis.magic.registry.ModRegistry;
 import net.awakaxis.magic.utils.Utilities;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -14,6 +15,7 @@ public class Magic implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModNetworking.registerC2SPackets();
-		Utilities.UpdateCollision();
+		Utilities.RegisterCollisionListener();
+		ModRegistry.registerAll();
 	}
 }

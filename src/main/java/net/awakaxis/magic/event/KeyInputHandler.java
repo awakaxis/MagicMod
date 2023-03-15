@@ -17,7 +17,7 @@ public class KeyInputHandler {
 
     public static void registerKeyInputs() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if(testKey.wasPressed()) {
+            if(testKey.isPressed()) {
                 ClientPlayNetworking.send(ModNetworking.TEST_ID, PacketByteBufs.create());
             }
         });

@@ -12,7 +12,5 @@ public class ModNetworking {
         ServerPlayNetworking.registerGlobalReceiver(TEST_ID, TestC2SPacket::receive);
     }
 
-    public static void registerS2CPackets() {
-
-    }
+    public static void registerS2CPackets() {}
 }
